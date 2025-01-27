@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-{
-    margin: 0;
+*{
+    margin: 0.1;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -13,10 +13,10 @@
 }
 
 :root{
-    --bg-color:#191f36;
-    --snd-bf-color:#262B40;
+    --bg-color:hsl(100, 4%, 26%);
+    --snd-bf-color:#383f2f;
     --text-color:#fff;
-    --main-color:#59B2F4;
+    --main-color:#09a79a;
 
 }
 
@@ -198,7 +198,7 @@ span{
     gap: 2rem;
 }
 
-.skills-container .skills-box{
+.skills-container.skills-box{
     flex: 1 1 30 rem;
     background: var(--snd-bf-color);
     padding: 3rem 2rem 4rem;
@@ -210,7 +210,7 @@ span{
 }
 
 
-.skills-container .skills-box:hover{
+.skills-container.skills-box:hover{
     border-color: var(--main-color);
     transform: scale(1.05);
 }
@@ -240,7 +240,7 @@ span{
     gap: 2rem;
 }
 
-.portfolio-container .portfolio-box{
+.portfolio-container.portfolio-box{
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -251,7 +251,7 @@ span{
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer{
+.portfolio-box.portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -267,7 +267,7 @@ span{
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover.portfolio-layer{
     transform: translateY(0);
 
 }

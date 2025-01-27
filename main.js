@@ -5,7 +5,7 @@ let navbar=document.querySelector('.navbar');
 
 menuIcon.onclick=()=>{
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active');
 }
 
 /*==============scroll section active link ==============*/
@@ -37,7 +37,6 @@ header.classList.toggle('sticky',window.scrollY>100);
 
 menuIcon.classList.remove('fa-xmark');
 navbar.classList.remove('active');
-};
 
 /*============== scroll reveal ==============*/
 
@@ -47,14 +46,15 @@ ScrollReveal({
     delay:200,
 });
 
-ScrollReveal().reveal('.home-content,heading,'{orgin:'top'});
-ScrollReveal().reveal('.home-img,.services-container,.portfolio-box, .contact form'{orgin:'button'});
-ScrollReveal().reveal('.home-contact,about-img,'{orgin:'left'});
-ScrollReveal().reveal('.home-contact,about-content,'{orgin:'right'});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-contact, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-contact, .about-content', { origin: 'right' });
+
 
 /*============== typed JS ==============*/
 
-const typed=new Typed('.multiple-text',{
+const typed=new typed('.multiple-text',{
     strings:['Frontend Developer','Web Designer'],
     typeSpeed:70,
     backSpeed:70,
